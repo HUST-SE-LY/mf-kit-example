@@ -1,0 +1,12 @@
+{
+  "name": "app1",
+  "template": "vue",
+  "host": {
+    "port": 3001,
+    "curRemotes": {},
+    "exposes": {
+      "./export-app": "./mf-exposes/export-app.ts"
+    }
+  },
+  "modules": {}
+}
