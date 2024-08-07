@@ -16,7 +16,7 @@ export default defineConfig({
   },
   tools: {
     rspack: (config, { appendPlugins }) => {
-      config.output!.uniqueName = mfConfig.name;
+      config.output!.uniqueName = mfConfig.name,
       appendPlugins([
         new ModuleFederationPlugin({
           name: mfConfig.name,
