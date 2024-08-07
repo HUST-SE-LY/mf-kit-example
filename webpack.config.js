@@ -17,7 +17,7 @@ module.exports = (env = {}) => ({
   target: 'web',
   entry: path.resolve(__dirname, './src/index.ts'),
   output: {
-    publicPath: `http://localhost:${mfConfig.host.port}/`,
+    publicPath: `https://mf-kit-example-nnes.vercel.app/`,
   },
   resolve: {
     extensions: ['.vue', '.jsx', '.js', '.json', '.tsx', '.ts'],
