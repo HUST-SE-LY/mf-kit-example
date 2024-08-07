@@ -4,11 +4,11 @@
   "host": {
     "port": 3000,
     "curRemotes": {
-      "app1": "app1@http://127.0.0.1:3001/mf-manifest.json"
+      "app1": "app1@https://mf-kit-example.vercel.app/mf-manifest.json"
     },
     "exposes": {}
   },
   "modules": {
-    "app1": "app1@http://127.0.0.1:3001/mf-manifest.json"
+    "app1": "app1@https://mf-kit-example.vercel.app/mf-manifest.json"
   }
 }

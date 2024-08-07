@@ -13,7 +13,7 @@ export default defineConfig({
   },
   tools: {
     rspack: (config, { appendPlugins }) => {
-      config.output!.uniqueName = 'host';
+      config.output!.uniqueName = mfConfig.name;
       appendPlugins([
         new ModuleFederationPlugin({
           name: mfConfig.name,
