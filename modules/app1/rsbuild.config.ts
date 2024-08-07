@@ -11,6 +11,9 @@ export default defineConfig({
   dev: {
     assetPrefix: `http://localhost:${mfConfig.host.port}`,
   },
+  output: {
+    assetPrefix: 'https://mf-kit-example.vercel.app'
+  },
   tools: {
     rspack: (config, { appendPlugins }) => {
       config.output!.uniqueName = mfConfig.name;
