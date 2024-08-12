@@ -31,7 +31,7 @@ export default defineConfig({
           exposes: {
             ...mfConfig.host.exposes,
           },
-          shared: ['vue'],
+          shared: ['vue', 'vue-router'],
         }),
       ]);
     },
