@@ -81,7 +81,14 @@ module.exports = (env = {}) => ({
       exposes: {
         ...mfConfig.host.exposes,
       },
-      shared: ['vue', 'vue-router']
+      shared: {
+        vue: {
+          singleton: true,
+        },
+        'vue-router': {
+          singleton: true,
+        }
+      },
     }),
   ],
   devServer: {
